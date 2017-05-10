@@ -1,0 +1,168 @@
+.App {
+    width: 600px;
+    height: 600px;
+    margin: 10% auto auto;
+    border: 1px solid black;
+    position: relative;
+    background-color: lightskyblue;
+}
+
+div.road {
+    width: 100%;
+    height: 30%;
+    margin-top: 70%;
+    border: 1px solid black;
+    position: absolute;
+    background-color: green;
+    z-index: 0;
+}
+
+div.truck {
+    width: 40%;
+    height: 40%;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 4;
+}
+
+div.cabin {
+    background-color: lightsteelblue;
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 0px 5px 5px black;
+}
+
+div.cabinWindow {
+    width: 90%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+div.wiper{
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 10;
+}
+
+.wiperArm {
+    fill: black;
+    stroke: black;
+}
+
+div.wheel {
+    width: 15%;
+    height: 15%;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    background-color: black;
+
+}
+
+div.leftWheel {
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 80%;
+}
+
+div.rightWheel {
+    position: absolute;
+    margin-left: 78%;
+    margin-top: 80%;
+}
+
+div.frontLight {
+    position: absolute;
+    width: 11%;
+    height: 13%;
+    margin-top: 57%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+div.leftFrontLight {
+    margin-left: 3%;
+}
+
+div.rightFrontLight {
+    margin-left: 84%;
+}
+
+.blinker {
+    width: 10%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.blink-on {
+    background-color: #FFFF00;
+}
+
+.blink-off {
+    background-color: lightgoldenrodyellow;
+}
+
+#leftBlinker {
+    margin-top: 70%;
+    margin-left: 5%;
+}
+
+#rightBlinker {
+    margin-top: 70%;
+    margin-left: 85%;
+}
+
+div.plate {
+    background-color: white;
+    width: 30%;
+    height: 10%;
+    margin-left: 35%;
+    margin-top: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 100;
+    position: absolute;
+}
+
+polygon.road {
+    fill: darkgrey;
+    stroke: black;
+    stroke-width: 3
+}
+
+svg.roadSvg {
+    z-index: 1;
+}
+
+svg.road-centerline {
+    z-index: 2;
+}
+rect.line {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
