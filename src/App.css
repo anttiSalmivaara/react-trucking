@@ -48,7 +48,7 @@ div.cabinWindow {
     background-color: white;
 }
 
-div.wiper{
+div.wiper {
     width: 90%;
     height: 40%;
     margin-left: 5%;
@@ -87,7 +87,7 @@ div.frontLight {
     position: absolute;
     width: 11%;
     height: 13%;
-    margin-top: 57%;
+    margin-top: 52%;
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
@@ -98,7 +98,7 @@ div.leftFrontLight {
 }
 
 div.rightFrontLight {
-    margin-left: 84%;
+    margin-left: 86%;
 }
 
 .blinker {
@@ -127,6 +127,24 @@ div.rightFrontLight {
     margin-left: 85%;
 }
 
+div.grill {
+    height: 14%;
+    width: 60%;
+    background: repeating-linear-gradient(
+            0deg,
+            grey,
+            grey 2px,
+            black 2px,
+            black 5px
+    );
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 52%;
+    margin-left: 20%;
+    z-index: 7;
+}
+
 div.plate {
     background-color: white;
     width: 30%;
@@ -152,6 +170,7 @@ svg.roadSvg {
 svg.road-centerline {
     z-index: 2;
 }
+
 rect.line {
     fill: white;
     stroke: white;

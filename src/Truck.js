@@ -50,6 +50,8 @@ class Blinker extends Component {
 }
 
 class Wiper extends Component {
+
+
     render() {
         return (
             <div className="wiper">
@@ -64,15 +66,16 @@ class Wiper extends Component {
                                           begin="click"
                                           repeatCount="1"
                                           id="first-wipe"/>
-                        <animateTransform attributename="transform"
-                                          attributeType="XML"
-                                          type="rotate"
-                                          from="180 108 74"
-                                          to="0 108 74"
-                                          dur="1s"
-                                          begin="first-wipe.begin + 1s"
-                                          repeatCount="1"
-                                          additive="sum"/>
+                        /*              <animateTransform attributename="transform"
+                         attributeType="XML"
+                         type="rotate"
+                         from="180 108 74"
+                         to="0 108 74"
+                         dur="1s"
+                         begin="first-wipe.begin + 1s"
+                         repeatCount="1"
+                         additive="sum"/>
+                         */
                     </rect>
                 </svg>
             </div>
@@ -95,6 +98,14 @@ class Cabin extends Component {
             </div>
 
 
+        )
+    }
+}
+
+class Grill extends Component {
+    render() {
+        return (
+            <div className="grill"/>
         )
     }
 }
@@ -134,6 +145,7 @@ class Truck extends Component {
         return (
             <div id="truck" className="truck">
                 <Cabin />
+                <Grill />
                 <Plate />
                 <div className="wheel leftWheel"/>
                 <div className="wheel rightWheel"/>
